@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TettTrygg — Tetting & Sikring</title>
+<meta name="description" content="TettTrygg: Profesjonell tetting og gnagersikring for boliger og næring. Produkter, befaring og rådgivning. Over 10 års erfaring.">
+<style>
+  body{margin:0;font-family:Arial,sans-serif;background:#f6f8fb;color:#0b1220}
+  header{background:#1f6feb;color:white;padding:20px;text-align:center}
+  header h1{margin:0;font-size:28px}
+  nav{margin-top:10px}
+  nav a{color:white;margin:0 10px;text-decoration:none;font-weight:bold}
+  section{padding:40px 20px;max-width:1000px;margin:auto}
+  h2{color:#1f6feb;margin-bottom:15px}
+  .card{background:white;padding:20px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.05);margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+  footer{background:#eef3fb;color:#6b7280;text-align:center;padding:20px}
+  button,a.button{display:inline-block;padding:10px 20px;border-radius:8px;text-decoration:none;color:white;background:#1f6feb;font-weight:bold;margin-top:10px}
+  a.button{display:inline-block}
+  @media(max-width:600px){h1{font-size:22px}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>TettTrygg</h1>
+  <nav>
+    <a href="#tjenester">Tjenester</a>
+    <a href="#produkter">Produkter</a>
+    <a href="#om">Om oss</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<section id="hero" style="text-align:center">
+  <h2>Tett og trygg — vi sikrer bygget ditt mot gnagere og lekkasjer</h2>
+  <p>Over 10 års erfaring. Vi tetter boliger, butikker, kontorer, kjellere og loft. Vi gir rådgivning og tilbyr produkter som sikrer varig tetting.</p>
+  <a href="#kontakt" class="button">Be om gratis befaring</a>
+</section>
+
+<section id="tjenester">
+  <h2>Våre tjenester</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Tetting av boliger</h3>
+      <p>Fuging, beslag og tetting rundt dører, vinduer og rør. Vi sørger for varig tetting med kvalitetmaterialer.</p>
+    </div>
+    <div class="card">
+      <h3>Tetting for butikker & næring</h3>
+      <p>Skreddersydde løsninger for varelagring, inngangspartier og tekniske rom.</p>
+    </div>
+    <div class="card">
+      <h3>Gnagertetting</h3>
+      <p>Netting, stålbeslag og andre tiltak for å hindre gnagere fra å komme inn.</p>
+    </div>
+    <div class="card">
+      <h3>Inspeksjon & rådgivning</h3>
+      <p>Befaring med tiltaksplan og prisoverslag. Vi gir råd om riktig materiale og metode.</p>
+    </div>
+    <div class="card">
+      <h3>Produktsalg</h3>
+      <p>Stålull, netting, fugemasse og beslag — materialer med dokumentert effekt.</p>
+    </div>
+  </div>
+</section>
+
+<section id="produkter">
+  <h2>Produkter vi anbefaler</h2>
+  <div class="grid">
+    <div class="card"><strong>Fugemasse</strong><p>Tetting rundt vinduer, rør og sprekker.</p></div>
+    <div class="card"><strong>Stålull & netting</strong><p>Effektivt mot gnagere i kombinasjon med fugemasse.</p></div>
+    <div class="card"><strong>Beslag</strong><p>Beskyttelse ved utsatte gjennomføringer og kanter.</p></div>
+  </div>
+</section>
+
+<section id="om">
+  <h2>Om TettTrygg</h2>
+  <p>Vi er et fagteam med over 10 års erfaring innen tetting og skadedyrforebygging, for både private husholdninger og næring. Vi benytter faggodkjente metoder og materialer for å sikre at bygninger forblir tette og trygge.</p>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt oss</h2>
+  <p>E-post: <a href="mailto:tetttrygg@gmail.com">tetttrygg@gmail.com</a><br>
+     Telefon: <a href="tel:+4795169064">+47 95 16 90 64</a></p>
+  <p>Fyll ut skjemaet under eller trykk knappen for å sende e-post:</p>
+  <a href="mailto:tetttrygg@gmail.com?subject=Forespørsel fra nettside" class="button">Send forespørsel</a>
+</section>
+
+<footer>
+  © <span id="year"></span> TettTrygg. Alle rettigheter forbeholdt.
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
