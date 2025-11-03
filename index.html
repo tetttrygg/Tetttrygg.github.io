@@ -3,90 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TettTrygg - Profesjonell tetting av hus og lokaler</title>
+  <title>TettTrygg Strømmen - Profesjonell tetting</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f8f8;
-      color: #333;
+      background-color: #f7f7f7;
+      color: #222;
+      line-height: 1.7;
     }
+
     header {
       background-color: #004d99;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 30px 20px;
     }
+
     header img {
-      max-width: 150px;
-      margin-bottom: 10px;
+      max-width: 180px;
+      margin-bottom: 15px;
     }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
     nav {
       background-color: #0066cc;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      padding: 10px 0;
+      gap: 25px;
+      padding: 15px 0;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1em;
     }
+
     section {
-      padding: 40px 20px;
+      padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
     }
+
     section h2 {
       color: #004d99;
-      margin-bottom: 20px;
+      font-size: 2em;
+      margin-bottom: 30px;
+      text-align: center;
     }
+
     .services, .products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 25px;
     }
+
     .card {
       background-color: white;
-      border-radius: 10px;
+      border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.15);
       text-align: center;
     }
+
     .card img {
       max-width: 100%;
-      border-radius: 5px;
+      border-radius: 8px;
       margin-bottom: 15px;
     }
+
+    .card h3 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1em;
+    }
+
+    .highlight-list {
+      list-style: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
     footer {
       background-color: #004d99;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px 10px;
+      font-size: 0.95em;
     }
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      text-align: center;
+
+    .contact-info a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      nav { flex-direction: column; gap: 15px; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="https://via.placeholder.com/150x80?text=TettTrygg+Logo" alt="TettTrygg logo">
-  <h1>TettTrygg</h1>
-  <p>Profesjonell tetting av hus, lokaler og bedrifter mot skadedyr og trekk.</p>
+  <img src="https://via.placeholder.com/180x80?text=TettTrygg+Logo" alt="TettTrygg logo">
+  <h1>TettTrygg Strømmen</h1>
+  <p>Profesjonell tetting av hus, butikker og næringslokaler – trygghet mot skadedyr</p>
+  <img src="https://via.placeholder.com/600x300?text=Fagfolk+med+fagklær+tetting" alt="Fagfolk som tetter hus">
 </header>
 
 <nav>
   <a href="#services">Tjenester</a>
   <a href="#products">Produkter</a>
+  <a href="#about">Om oss</a>
   <a href="#contact">Kontakt</a>
 </nav>
+
+<section id="about">
+  <h2>Om TettTrygg</h2>
+  <p>
+    Vi tilbyr profesjonell tetting av bygninger, enten det gjelder boliger, butikker, firmaer eller små og store lokaler. Våre eksperter tetter rundt rørgjennomføringer på bad og kjøkken, samt andre potensielle inngangspunkter for skadedyr, på en trygg og sikker måte.
+  </p>
+  <p>
+    Med over 10 års erfaring i tetting og skadedyrforebygging, sørger vi for at huset eller lokalene dine blir effektivt beskyttet mot gnagere og andre skadedyr. Vi bruker kun profesjonelle materialer og metoder, og våre fagfolk utfører alltid arbeidet med høy kvalitet.
+  </p>
+  <ul class="highlight-list">
+    <li>Trygg og profesjonell tetting som stopper skadedyr effektivt</li>
+    <li>Reklamasjon og garanti for utført arbeid</li>
+    <li>Gratis befaring – vi vurderer hva som må tettes før skadene oppstår</li>
+    <li>Fagfolk med erfaring og riktig utstyr for alle typer bygninger</li>
+    <li>Materialer som tåler vær, gnagere og tid</li>
+  </ul>
+  <p>
+    Forebygging er alltid bedre enn å reparere skader senere. Å sikre huset ditt mot gnagere nå kan spare både tid, penger og bekymringer.
+  </p>
+</section>
 
 <section id="services">
   <h2>Våre Tjenester</h2>
@@ -94,7 +160,7 @@
     <div class="card">
       <img src="https://via.placeholder.com/300x200?text=Tetting+av+hus" alt="Tetting av hus">
       <h3>Tetting av hus</h3>
-      <p>Vi tetter hus mot gnagere, trekk og fukt. Kjeller, loft og alle rom.</p>
+      <p>Kjeller, loft og alle rom tettes profesjonelt for å hindre skadedyr og trekk.</p>
     </div>
     <div class="card">
       <img src="https://via.placeholder.com/300x200?text=Tetting+av+lokaler" alt="Tetting av lokaler">
@@ -102,9 +168,14 @@
       <p>Butikker, kontorer og lager – vi sørger for tett og sikker bygning.</p>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/300x200?text=Rørgjennomføring" alt="Rørgjennomføring">
+      <img src="https://via.placeholder.com/300x200?text=Rør+og+kabler" alt="Rør- og kabelgjennomføring">
       <h3>Rør- og kabelgjennomføring</h3>
-      <p>Profesjonell tetting av rør, kabler og andre gjennomføringer.</p>
+      <p>Profesjonell tetting av rør, kabler og andre gjennomføringer for å hindre gnagere.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Dører+og+porter" alt="Dører og porter">
+      <h3>Dører og porter</h3>
+      <p>Tetting av dører, porter og alle innganger for å sikre mot skadedyr.</p>
     </div>
   </div>
 </section>
@@ -122,6 +193,11 @@
       <h3>Tetting materialer</h3>
       <p>Alt fra hjørnekasser, dører, porter og tilpasset skreddersydd tetting.</p>
     </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150?text=Profesjonelle+verktøy" alt="Profesjonelle verktøy">
+      <h3>Profesjonelle verktøy</h3>
+      <p>Alt nødvendig utstyr for sikker og effektiv tetting.</p>
+    </div>
   </div>
 </section>
 
@@ -130,12 +206,13 @@
   <div class="contact-info">
     <p>E-post: <a href="mailto:tetttrygg@gmail.com">tetttrygg@gmail.com</a></p>
     <p>Telefon: <a href="tel:+4795169064">+47 951 69 064</a></p>
-    <p>Adresse: Bygaten 12, 1234 Bygdebyen, Norge</p>
+    <p>Adresse: Segelckes vei 16, 2010 Strømmen</p>
+    <p>Gratis befaring – kontakt oss i dag!</p>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 TettTrygg. Alle rettigheter reservert.</p>
+  <p>&copy; 2025 TettTrygg Strømmen. Alle rettigheter reservert.</p>
 </footer>
 
 </body>
